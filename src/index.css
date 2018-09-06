@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  height: 100vh;
+  background-color: #6DB3BF;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  height: 100vh;
+  padding-top: 100px;
+  
+}
+
+input {
+  width: 100%;
+}
+
+p {
+  flex-grow: 2;
+}
+
+
+.to-do {
+  margin: 10px 0px;
+  background-color: blanchedalmond;
+  cursor: pointer;
+  list-style: none;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+button {
+  width: 50%;
+  text-align: center;
+  background-color: #153641;
+  float: right;
+  color: white;
+  border: 2px solid white;
+}
+
+.save-btn {
+  width: 100%;
+}
