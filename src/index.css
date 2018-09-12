@@ -22,6 +22,22 @@ body {
 
 input {
   width: 100%;
+  font-size: 30px;
+  margin: 15px 0px;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid black 1px;
 }
 
-
+.listItem {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 25px;
+  cursor: pointer;
+  background-color: #ecf0f1;
+  border-radius: 15px;
+  border: solid black 1px;
+  -webkit-box-shadow: 4px 7px 4px 1px #2c3e50;
+  box-shadow: 4px 7px 4px 1px #2c3e50;
+  padding: 4px 0px;
+}
