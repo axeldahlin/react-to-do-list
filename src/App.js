@@ -10,6 +10,14 @@ class App extends Component {
     }
   }
 
+  componentDidMount() {
+    const MyObj = JSON.parse(localStorage.getItem('MyObj'));
+    this.setState({
+      toDoList: MyObj,
+
+    });
+  }
+
   handleSubmit = (event) => {
     event.preventDefault();
     const toDoArr = this.state.toDoList.slice();
@@ -18,6 +26,9 @@ class App extends Component {
       toDoList: toDoArr,
       currentText: ''
     });
+    const stringArray = JSON.stringify(toDoArr);
+    localStorage.setItem('MyObj', stringArray);
+    console.log(stringArray);
   }
 
   submitChangeHandler = (e) => {
@@ -32,6 +43,8 @@ class App extends Component {
     this.setState({
       toDoList: toDoList,
     });
+    const stringArray = JSON.stringify(toDoList);
+    localStorage.setItem('MyObj', stringArray);
   }
 
   render() {
