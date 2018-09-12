@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ListItem from './ListItem.js';
+import PlayComp from './PlayComp/PlayComp';
 
 class App extends Component {
   constructor(props) {
@@ -64,6 +65,7 @@ class App extends Component {
             />
         </form>
         {listItems}
+        <PlayComp />
       </div>
     );
   }
